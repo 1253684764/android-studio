@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/BMIJSQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="BMI 计算器"
+            android:textColor="#050000"
+            android:textSize="45sp" />
+
+        <EditText
+            android:id="@+id/TZ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            android:hint="输入体重，单位公斤"
+            android:textColor="#878181">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/SG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="输入身高，单位米"
+            android:textColor="#878181">
+
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/XB"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="性别"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+            <RadioGroup
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/NAN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:textSize="25sp"
+                    android:text="男">
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/NV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="女"
+                    android:textSize="25sp"
+                    android:checked="false">
+
+                </RadioButton>
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+
+            android:id="@+id/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#BDBABA"
+            android:text="计算"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="BMI:"
+            android:textColor="#686666"
+            android:textSize="30sp"></TextView>
+
+        <TextView
+            android:id="@+id/ZD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="诊断:"
+            android:textColor="#686666"
+            android:textSize="30sp"></TextView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
