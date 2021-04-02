@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="-50dp"
+            android:src="@drawable/android"
+
+
+            >
+
+        </ImageView>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="姓名"
+        android:drawableStart="@drawable/ic_baseline_person_pin_24"
+        android:textColor="#878181">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="手机号"
+        android:drawableStart="@drawable/ic_baseline_phone_24"
+        android:textColor="#878181"
+        >
+
+    </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/XB"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="9dp"
+                android:text="性别"
+                android:textColor="#918F8F"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <RadioGroup
+                android:id="@+id/rg_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="false"
+                    android:textSize="18sp"
+                    android:text="男">
+
+                </RadioButton>
+                <RadioButton
+                    android:id="@+id/woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="女"
+                    android:textSize="18sp"
+                    android:checked="false">
+
+                </RadioButton>
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="我喜欢的专业课:"
+            android:layout_marginTop="0dp"
+            android:textColor="#686666"
+            android:textSize="22sp"></TextView>
+
+        <CheckBox
+            android:id="@+id/cb_java"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginStart="15dp"
+            android:text="Java语言" />
+
+        <CheckBox
+            android:id="@+id/cb_android"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginStart="15dp"
+            android:text="Android" />
+
+        <CheckBox
+            android:id="@+id/cb_english"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginStart="15dp"
+            android:text="大学英语" />
+
+        <CheckBox
+            android:id="@+id/cb_math"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="-1dp"
+            android:text="高等数学" />
+
+        <Button
+
+            android:id="@+id/btn_sure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:backgroundTint="#BDBABA"
+            android:text="确定"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </LinearLayout>
+</RelativeLayout>
